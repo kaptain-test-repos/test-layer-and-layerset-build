@@ -1,0 +1,10 @@
+rules:
+  branchNaming:
+    requireConventional: true
+    blockSlashes: true
+  commitMessages:
+    requireConventional: true
+    blockDuplicates: false
+  codeQuality:
+    lintEnabled: true
+    testRequired: true

@@ -1,0 +1,17 @@
+apiVersion: kaptain.org/1.15
+kind: kubernetes-app-docker-dockerfile
+metadata:
+  labels:
+    kaptain.org/layer-type: quality
+  annotations:
+    kaptain.org/description: Quality rules layer for test validation
+spec:
+  main:
+    quality:
+      branches:
+        blockSlashes: true
+      commits:
+        requireConventional: true
+layer-payload:
+  - source: /quality-rules.yaml
+    destination: quality/
