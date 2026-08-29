@@ -1,6 +1,5 @@
-apiVersion: kaptain.org/1.15
+apiVersion: kaptain.org/1.29
 kind: layer-and-layerset-build
-
 spec:
   global:
     projectName:
@@ -15,3 +14,7 @@ spec:
       preDockerPrepare: test-hooks/pre-docker-prepare.bash
       postDockerTests: test-hooks/post-docker-tests.bash
       postBuild: test-hooks/post-build.bash
+  platform:
+    githubActions:
+      release:
+        consumerReferenceForms: full-first
