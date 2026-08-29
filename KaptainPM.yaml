@@ -14,3 +14,7 @@ spec:
       preDockerPrepare: test-hooks/pre-docker-prepare.bash
       postDockerTests: test-hooks/post-docker-tests.bash
       postBuild: test-hooks/post-build.bash
+  platform:
+    githubActions:
+      release:
+        consumerReferenceForms: full-first
