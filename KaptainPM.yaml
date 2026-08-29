@@ -1,4 +1,4 @@
-apiVersion: kaptain.org/1.19
+apiVersion: kaptain.org/1.29
 kind: layer-and-layerset-build
 spec:
   global:
