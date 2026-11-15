@@ -8,8 +8,9 @@ on:
 
 jobs:
   build:
-    uses: kube-kaptain/buildon-github-actions/.github/workflows/layer-and-layerset-build.yaml@fix-gh-release-how-to-consume-section-2
+    uses: kube-kaptain/buildon-github-actions/.github/workflows/layer-and-layerset-build.yaml@validate-gh-actions-security-efficiency-changes-05
     permissions:
       contents: write
       packages: write
       checks: write
+      id-token: write
